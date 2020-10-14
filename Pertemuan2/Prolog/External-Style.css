@@ -1,11 +1,37 @@
 /* For All Tag */
 th{
-    background-color: #4CAF50;
+    background-color: #343434;
 }
 
-/* For id, using a # */
+table{
+    border: 5px outset;
+    border-color: aquamarine;
+    border-radius: 10%;
+    /* Using Margin for space between item*/
+    margin: 10px;
+}
+
+td, th{
+    /* Using Padding for space between content with border */
+    padding: 5px;
+}
+
+/* For id, using a # 
+    and this name is ID Selector
+*/
 #myname{
     color: blueviolet;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
+}
+
+/* For Class using .
+    this is named Class Selector */
+.head-table{
+    background-color: #f3f3f3;
+    color: #ffffff;
+}
+
+.body-table{
+    background-color: #e1e1e1;
 }
