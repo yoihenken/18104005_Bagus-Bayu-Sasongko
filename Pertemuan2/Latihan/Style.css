@@ -1,46 +1,112 @@
-.m-5{
-    margin: 10px;
+body,html{
+    height: 100%;
+    margin-top: -1px;
+    margin-left: -8px;
+    margin-right: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.mb-5{
-    margin-bottom: 10px;
+.p-3{
+    padding: 0px 20px;
 }
 
-.p-5{
-    padding: 10px;
-}
-
-.pl-5{
-    padding-left: 10px;
-}
-
-.pb-5{
-    padding-bottom: 10px;
-}
-
-
+/* For class Navbar */
 .navbar{
     overflow: hidden;
-    background-color: #34efff;
+    background-color: #212121;
+    text-align: center;
 }
 
+/* For title name */
 .nav-title{
     float: left;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 20px;
+    color: #9fa8da;
+    text-align: center;
+    margin-left: 50px;
+}
+/* For button */
+.nav{
+    background-color: #212121;
+    margin-right: 50px;
 }
 
-.nav{
+/* For style of button */
+.nav a{
     float: right;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    color: #9fa8da;
+    text-align: center;
+    padding: 5px 15px;
+}
+/* Hover the button of Navbar */
+.nav a:hover {
+    background-color: #9fa8da;
+    color: #212121;
+}
+/* For Jumbotron Image */
+.jumbo-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("asset/sakura-no-hana.jpg");
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* For Jumbotron text */
+.jumbo-title{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
-.header{
-    position: absolute;
-    align-items: center;
+.container{
+    background-color: #eeeeee;
+    box-sizing: border-box;
+    text-align: center;
+    color: #424242;
+    overflow: auto;
+    padding: 50px 50px;
+}
+.content{
+    margin: 0 auto;
+    width: 80%;
+    font-size: 20px;
+}
+
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: medium;
+    color: #424242;
+}
+
+.avatar{
+    border-radius:50%;
+    vertical-align: middle;
+    width: 15%;
+    height: 15%;
+}
+
+.title{
+    color: #1a237e;
+}
+
+.title2{
+    color: #212121;
+}
+
+.line{
+    border: 1px solid;
+    border-color: #616161;
+    background-color: #616161;
+    border-radius: 20%;
+    width: 30%;
+    margin-bottom: 40px;
 }
