@@ -35,3 +35,8 @@ td, th{
 .body-table{
     background-color: #e1e1e1;
 }
+
+/* Pseudo-Class */
+a:hover{
+    color: green;
+}
