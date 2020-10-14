@@ -2,10 +2,45 @@
     margin: 10px;
 }
 
+.mb-5{
+    margin-bottom: 10px;
+}
+
+.p-5{
+    padding: 10px;
+}
+
+.pl-5{
+    padding-left: 10px;
+}
+
+.pb-5{
+    padding-bottom: 10px;
+}
+
+
+.navbar{
+    overflow: hidden;
+    background-color: #34efff;
+}
+
 .nav-title{
     float: left;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 20px;
 }
 
 .nav{
     float: right;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header{
+    position: absolute;
+    align-items: center;
 }
