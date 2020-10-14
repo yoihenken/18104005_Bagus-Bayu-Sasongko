@@ -1,7 +1,7 @@
 body,html{
     height: 100%;
     margin-top: -1px;
-    margin-left: -8px;
+    margin-left: 0px;
     margin-right: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -65,6 +65,7 @@ body,html{
     color: white;
 }
 
+/* For Profile */
 .container{
     background-color: #eeeeee;
     box-sizing: border-box;
@@ -73,12 +74,14 @@ body,html{
     overflow: auto;
     padding: 50px 50px;
 }
+
 .content{
     margin: 0 auto;
     width: 80%;
     font-size: 20px;
 }
 
+/* Table Settings */
 .table{
     margin-left: auto;
     margin-right: auto;
@@ -87,6 +90,7 @@ body,html{
     color: #424242;
 }
 
+/* Avatar */
 .avatar{
     border-radius:50%;
     vertical-align: middle;
@@ -94,6 +98,7 @@ body,html{
     height: 15%;
 }
 
+/* Title color */
 .title{
     color: #1a237e;
 }
@@ -102,6 +107,7 @@ body,html{
     color: #212121;
 }
 
+/* HR */
 .line{
     border: 1px solid;
     border-color: #616161;
@@ -109,4 +115,34 @@ body,html{
     border-radius: 20%;
     width: 30%;
     margin-bottom: 40px;
+}
+
+/* Card Attr */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+  
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-inside {
+padding: 2px 16px;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+/* footer */
+.footer {
+    background-color: #212121;
+    color: #ffffff;
+    font-weight: bold;
+    min-height: 100px;
+    padding: 10px;
+    text-align: center;
+    overflow: auto;
 }
