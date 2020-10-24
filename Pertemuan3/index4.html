@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Create Form and Radio for change background color -->
+    <form action="" name="go">
+        <!-- When Radio clicked, event handler will be run (background color changed) -->
+        <h3><input type="radio" name="C1" onclick="document.bgColor='lightblue'">Light Blue</h3>
+        <h3><input type="radio" name="C2" onclick="document.bgColor='blue'">Blue</h3>
+        <h3><input type="radio" name="C3" onclick="document.bgColor='darkblue'">Dark Blue</h3>
+        <h3><input type="radio" name="C4" onclick="document.bgColor='white'">White</h3>
+    </form>
+    <!-- Script form HTML -->
+    <script>
+        //Using variable to hold
+        var message="Welcome to my site"
+        //Print Text to html with function to uppper case all text
+        document.write(message.toLocaleUpperCase().bold())
+    </script>
+
+    <!-- Form for verify email -->
+    <form action="" name="test" onsubmit="checkmail(this.test2.value); return false">
+        <input type="text" name="test2" size="20">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Script Javascript for email verify -->
+    <script type="text/javascript">
+        function checkmail(email){
+            //Conditional if text dont have @
+            if(email.indexOf("@") != -1 && email.indexOf(".") !=-1)
+                alert("Apakah Alamat Email sudah benar?")
+            else
+                alert("Penulisan email salah!")
+        }
+    </script>
+
+
+</body>
+</html>

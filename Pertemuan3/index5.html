@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Open new window when click button-->
+    <script>
+        //window declaration
+        function bukawindow(){
+            window.open("http://www.google.com", "google", "width = 400, height = 300, toolbar = 1");
+        }
+    </script>
+    <!-- Button for open new window -->
+    <input type="button" value="Open" onclick="bukawindow()">
+    
+    <!-- Window with selection button-->
+    <script type="text/javascript">
+        //window declaration
+        var x = window.confirm("Are You Sure?")
+        //Conditional if button Ok was pressed
+        if (x)
+            window.alert("Go to next Job")
+        //Conditional if button Ok not pressed
+        else
+            window.alert("Repeat again until you can solve it")
+        
+        //New window for input Name
+        var y = window.prompt("Masukkan nama anda : ")
+
+        //pop up and show name
+        window.alert(y)
+    </script>
+</body>
+</html>
