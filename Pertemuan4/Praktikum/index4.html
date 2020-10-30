@@ -11,13 +11,18 @@
         </style>
     </head>
     <body>
+        <!-- Tag paragraph -->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quod minima, pariatur magnam reprehenderit voluptas ipsum sequi tenetur? Consequuntur, ipsum perferendis. Iure vero voluptate, vitae fuga cupiditate eligendi quasi ea?</p>
+        <!--  tag button-->
         <button>Berubah</button>
+        <!-- Declaration for JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
-           $('button').on('click',function() {
+            //add event listener for button
+            $('button').on('click',function() {
+                //when button clicked, the tag 'p' will change based on Style(add class)
                 $('p').toggleClass('henshin');
-           });
+            });
         </script>
     </body>
 </html>
