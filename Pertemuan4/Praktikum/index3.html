@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Latihan jQuery 3</title>
+    </head>
+    <body>
+        <label for="bil1">Bil1</label>
+        <input type="number" name="bil1" id="bil1">
+
+        <label for="bil2">Bil2</label>
+        <input type="number" name="bil2" id="bil2">
+        
+        <input type="button" value="Tambah" id="btnTambah">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $('#btnTambah').on('click', function(){
+                let bil1 = $('#bil1').val();
+                let bil2 = $('#bil2').val();
+                let hasil = parseInt(bil1) + parseInt(bil2);
+                alert('Hasil : ' + hasil);
+            });
+        </script>
+    </body>
+</html>

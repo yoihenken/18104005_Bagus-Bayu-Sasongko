@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Latihan jQuery 4</title>
+        <style>
+            .henshin {
+                color : #f0f;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quod minima, pariatur magnam reprehenderit voluptas ipsum sequi tenetur? Consequuntur, ipsum perferendis. Iure vero voluptate, vitae fuga cupiditate eligendi quasi ea?</p>
+        <button>Berubah</button>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+           $('button').on('click',function() {
+                $('p').toggleClass('henshin');
+           });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1</title>
+</head>
+<body>
+    <!-- H1 with id Hello -->
+    <h1 id="hello">Hello World</h1>
+    <!-- H1 with id teks -->
+    <h1 id="teks">Just a Text</h1>
+    <p>
+        Aye ayee captain!!!
+    </p>
+
+    <!-- declaration for jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- script for Javasript -->
+    <script>
+        //add method functional
+        $(document).ready(function(){
+            //add click listener for id "hello" 
+            $('#hello').click(function() {
+                //when clicked, then the text will be hidden
+                $(this).hide();
+            });
+
+            //add event listener for tag 'p' when hover it
+            $('p').hover(function(){
+                //when hover, then the text will be hidden
+                $(this).hide();
+            });
+
+            //add event listener for id teks
+            $('#teks').focus(function(){
+                //set width the text
+                $(this).css('width','500px');        
+            });
+        });
+    </script>
+</body>
+</html>

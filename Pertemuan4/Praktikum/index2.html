@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Latihan jQuery 2</title>
+    </head>
+    <body>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quaerat non minus, obcaecati est porro iste impedit dolore maiores quae, molestias consequatur fugiat! Deserunt, inventore obcaecati perferendis modi architecto sint!</p>
+        
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $('#hide').on('click', function(){
+                $('p').hide();
+            });
+            $('#show').on('click', function(){
+                $('p').show();
+            });
+        </script>
+    </body>
+</html>
