@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Latihan jQuery 2</title>
+    </head>
+    <body>
+        <!-- Paragraph -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quaerat non minus, obcaecati est porro iste impedit dolore maiores quae, molestias consequatur fugiat! Deserunt, inventore obcaecati perferendis modi architecto sint!</p>
+        <!-- button with id hide -->
+        <button id="hide">Hide</button>
+        <!-- button with id show -->
+        <button id="show">Show</button>
+        <!-- declaration for jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- script for JQuery -->
+        <script>
+            //add event listener for id hide
+            $('#hide').on('click', function(){
+                //if button clicked, tag 'p' will hidden
+                $('p').hide();
+            });
+
+            //add event listener for id show
+            $('#show').on('click', function(){
+                //if button clicked, tag 'p' will show
+                $('p').show();
+            });
+        </script>
+    </body>
+</html>
