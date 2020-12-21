@@ -1,6 +1,6 @@
 <?php 
     include 'koneksi.php';
-    $posisi = ['Striker', 'Midfielder', 'Defender'];
+    $kelas = ['SE-02-A', 'SE-02-B', 'SE-02-C'];
     $sql = 'SELECT * FROM data';
     $data = $conn->query($sql);
 ?>
