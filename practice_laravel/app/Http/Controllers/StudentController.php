@@ -12,7 +12,8 @@ class StudentController extends Controller
         $data['student'] = Student::all();
         return view('student', $data);
     }
-
+    
+    //method create untuk halaman Student
     public function create() {
     	$data['gender'] = ['L','P'];
     	$data['departement'] = ['S1 RPL', 'S1 Informatika', 'S1 Sistem Informasi'];
@@ -20,6 +21,7 @@ class StudentController extends Controller
     	return view('student_create', $data);
     }
 
+    //method store untuk halaman Student
     public function store(Request $request) {
     	$request->validate([
     		'nim' => 'required|size:8,unique:students',
@@ -40,6 +42,7 @@ class StudentController extends Controller
     	return redirect(route('student.index'))->with('message','Data Added Successfully');
     }
 
+    //method edit untuk halaman Student
     public function edit($id){
         $data['gender'] = ['L','P'];
         $data['departement'] = ['S1 RPL', 'S1 Informatika', 'S1 Sistem Informasi'];
@@ -48,6 +51,7 @@ class StudentController extends Controller
         return view('student_edit', $data);
     }
 
+    //method update untuk halaman Student
     public function update(Request $request, $id) {
     	$request->validate([
     		'nim' => 'required|size:8,unique:students',
@@ -68,11 +72,11 @@ class StudentController extends Controller
     	return redirect(route('student.index'))->with('message','Data Change Successfully');
     }
 
+    //method destroy untuk halaman Student
     public function destroy($id) {
     	$student = Student::find($id);
     	$student->delete();
 
     	return redirect(route('student.index'))->with('message','Data Deleted Successfully');
     }
-
 }
