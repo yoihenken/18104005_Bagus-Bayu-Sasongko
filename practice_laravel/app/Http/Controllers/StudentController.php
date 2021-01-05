@@ -23,7 +23,7 @@ class StudentController extends Controller
     public function store(Request $request) {
     	$request->validate([
     		'nim' => 'required|size:8,unique:students',
-    		'name' => 'required|min:3|max50',
+    		'name' => 'required|min:3|max:50',
     		'gender' => 'required|in:P,L',
     		'departement' => 'required',
             'address' => '',
@@ -31,7 +31,7 @@ class StudentController extends Controller
 
     	$student = new Student();
     	$student->nim = $request->nim;
-    	$student->nama = $request->nama;
+    	$student->name = $request->name;
     	$student->gender = $request->gender;
     	$student->departement = $request->departement;
     	$student->address = $request->address;
@@ -51,7 +51,7 @@ class StudentController extends Controller
     public function update(Request $request, $id) {
     	$request->validate([
     		'nim' => 'required|size:8,unique:students',
-    		'name' => 'required|min:3|max50',
+    		'name' => 'required|min:3|max:50',
     		'gender' => 'required|in:P,L',
     		'departement' => 'required',
     		'address' => '',
@@ -59,7 +59,7 @@ class StudentController extends Controller
 
     	$student = Student::find($id);
     	$student->nim = $request->nim;
-    	$student->nama = $request->nama;
+    	$student->name = $request->name;
     	$student->gender = $request->gender;
     	$student->departement = $request->departement;
     	$student->address = $request->address;
