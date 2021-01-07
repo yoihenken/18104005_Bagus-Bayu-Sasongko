@@ -36,4 +36,3 @@ Route::delete('/mahasiswa/delete/{id}','StudentController@destroy')->name('stude
 Route::get('mahasiswa/data','StudentController@data')->name('student.data');
 // Route untuk ke method data_destroy di StudentController
 Route::get('mahasiswa/data/delete/{id}','StudentController@data_destroy')->name('student.data.destroy');
-
