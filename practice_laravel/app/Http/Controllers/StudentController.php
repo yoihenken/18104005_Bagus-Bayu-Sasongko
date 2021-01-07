@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Student;
+use DataTables;
 
 class StudentController extends Controller
 {
@@ -78,5 +79,29 @@ class StudentController extends Controller
     	$student->delete();
 
     	return redirect(route('student.index'))->with('message','Data Deleted Successfully');
-    }
+	}
+	
+	//method data untuk halaman Student
+	public function data(Request $request){
+		if ($request->ajax()) {
+			$data = Student::all();
+			return Datatables::of($data)
+				->addIndexColumn()
+				->addColumn('action', function($row){
+					$btn = '
+							<div class="text-center">
+								<div class="btn-group">
+									<a href="'.route('student.edit', ['id' => $row->id]).'" class="edit btn btn-success btn-sm"> Edit </a>
+									<a href="'.route('student.data.destroy', ['id' => $row->id]).'" class="btn btn-danger btn-sm"> Hapus </a>
+								</div>
+							</div>
+							';
+					return $btn;
+				})
+				->rawColumns(['action']) 
+				->make(true);
+		}
+		return view('student_data');
+	}
+
 }
